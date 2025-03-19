@@ -24,14 +24,23 @@ h1 {
     margin-bottom: 20px;
 }
 
-.counter-container {
-    margin-bottom: 20px;
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-#periodCount {
-    font-size: 2em;
-    font-weight: bold;
-    color: #007bff;
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .button-group {
@@ -50,23 +59,25 @@ button {
     transition: background-color 0.3s ease;
 }
 
-#addButton {
-    background-color: #28a745;
-    color: white;
-}
-
-#removeButton {
-    background-color: #dc3545;
+#calculateButton {
+    background-color: #007bff;
     color: white;
 }
 
 #resetButton {
-    background-color: #ffc107;
-    color: #333;
+    background-color: #6c757d;
+    color: white;
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
 }
 
 .iframe-container {
