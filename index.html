@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Period Tracker</title>
+    <title>Attendance Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Period Tracker</h1>
-        <div class="counter-container">
-            <p>Total Periods: <span id="periodCount">0</span></p>
-            <div class="button-group">
-                <button id="addButton"><i class="fas fa-plus"></i> Add Period</button>
-                <button id="removeButton"><i class="fas fa-minus"></i> Remove Period</button>
-                <button id="resetButton"><i class="fas fa-undo"></i> Reset</button>
-            </div>
+        <h1>Attendance Calculator</h1>
+        <div class="input-container">
+            <label for="attended">Classes Attended:</label>
+            <input type="number" id="attended" placeholder="Enter classes attended">
         </div>
+        <div class="input-container">
+            <label for="held">Classes Held:</label>
+            <input type="number" id="held" placeholder="Enter classes held">
+        </div>
+        <div class="button-group">
+            <button id="calculateButton">Calculate Attendance</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div id="result" class="result"></div>
         <h2>Attendance Website</h2>
         <div class="iframe-container">
             <iframe src="https://www.attendance75.in/" width="100%" height="500px"></iframe>
